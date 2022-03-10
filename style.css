@@ -135,9 +135,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 100%;
+    width: 30%;
     height: 100vh;
-    background-color: #9356DC;
     opacity: 0.8;
     animation: fondu-out 0.1s ease-out;
     animation-delay: 1.8s;
@@ -146,24 +145,11 @@
     position: fixed;
     top: 0;
     left: 0;
-  }
-  .loader__letter {
-    display: flex;
-    font-family: "Shrikhand", cursive;
-    font-size: 120px;
-    color: whitesmoke;
-    text-shadow: 0 0 7px whitesmoke;
-    animation: load 0.9s linear;
-    animation-iteration-count: 2;
-  }
-  .loader__letter:nth-child(1) {
-    animation-delay: 0.2s;
-  }
-  .loader__letter:nth-child(2) {
-    animation-delay: 0.4s;
-  }
-  .loader__letter:nth-child(3) {
-    animation-delay: 0.6s;
+    border: 16px solid #9356DC;
+    border-radius: 50%;
+    border-top: 16px solid #9356DC;
+    border-right: 16px solid #FF79DA;
+    border-bottom: 16px solid #99E2D0;
   }
   
   footer {
