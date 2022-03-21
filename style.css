@@ -59,6 +59,12 @@
       transform: rotate(360deg);
     }
   }
+  html{
+    -webkit-text-size-adjust: 100%
+  }
+  *{
+    box-sizing: border-box;
+  }
   *,
   *::after,
   *::before {
@@ -380,6 +386,8 @@
   .howto ul li {
     flex-grow: 1;
     display: flex;
+    flex-basis: 30%;
+    justify-content: space-between;
     align-items: center;
     height: 70px;
     border-radius: 15px;
@@ -699,10 +707,12 @@
   }
   @media (min-width: 992px) {
     .container__index {
-      flex-direction: row;
+     /* flex-direction: row;*/
     }
     .container__index--1 {
+      /*
       flex: 1;
+      */
     }
   
     .find__what {
@@ -710,14 +720,15 @@
     }
   
     .howto ul {
-      flex-direction: column;
+      /*flex-direction: column;*/
     }
     .howto ul li {
       margin: 15px 0 15px 0;
     }
   
     .restaurant {
-      flex: 2;
+      
+      /*flex: 2;*/
       box-shadow: 0 4px 4px inset #c0c0c0;
     }
   }
