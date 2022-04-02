@@ -59,7 +59,7 @@
   }
 }
 html{
-  -webkit-text-size-adjust: 100%
+  text-size-adjust: 100%
 }
 *{
   box-sizing: border-box;
@@ -138,9 +138,7 @@ ul, nav {
   height: 100vh;
   background: #FF79DA ;
   display: flex;
-  -webkit-box-pack: center;
   justify-content: center;
-  -ms-flex-align: center;
   align-items: center;
   animation: loader 1000ms 4000ms ease-in-out forwards;
   }
@@ -149,26 +147,26 @@ ul, nav {
     font-family: 'Shrikhand', sans-serif;
     font-size: 3em;
     color: white;
-    -webkit-animation: words 3000ms both;
-            animation: words 3000ms both;
+    animation: words 3000ms both;
+    animation: words 3000ms both;
   }
   
   .loader .word--1 {
-    -webkit-animation-delay: 1000ms;
-            animation-delay: 1000ms;
+    animation-delay: 1000ms;
+    animation-delay: 1000ms;
   }
   
   .loader .word--2 {
-    -webkit-animation-delay: 2000ms;
-            animation-delay: 2000ms;
+    animation-delay: 2000ms;
+    animation-delay: 2000ms;
   }
   
   .loader .word--3 {
-    -webkit-animation-delay: 3000ms;
-            animation-delay: 3000ms;
+    animation-delay: 3000ms;
+    animation-delay: 3000ms;
   }
   
-  @-webkit-keyframes loader {
+  @keyframes loader {
     0% {
       opacity: 1;
     }
@@ -190,7 +188,7 @@ ul, nav {
     }
   }
   
-  @-webkit-keyframes words {
+  @keyframes words {
     0% {
       opacity: 0;
     }
@@ -224,21 +222,21 @@ ul, nav {
     border-radius: 50%;
     border: 6px solid white;
     border-color: white transparent white transparent;
-    -webkit-animation: dual-ring 1200ms 800ms linear forwards;
-            animation: dual-ring 1200ms 800ms linear forwards;
+    animation: dual-ring 1200ms 800ms linear forwards;
+    animation: dual-ring 1200ms 800ms linear forwards;
   }
   
-  @-webkit-keyframes dual-ring {
+  @keyframes dual-ring {
     0% {
-      -webkit-transform: rotate(0deg);
-              transform: rotate(0deg);
+      transform: rotate(0deg);
+      transform: rotate(0deg);
     }
     70% {
       opacity: 1;
     }
     100% {
-      -webkit-transform: rotate(360deg);
-              transform: rotate(360deg);
+      transform: rotate(360deg);
+      transform: rotate(360deg);
       opacity: 0;
     }
   }
@@ -252,17 +250,17 @@ ul, nav {
       opacity: 1;
     }
     100% {
-      -webkit-transform: rotate(360deg);
-              transform: rotate(360deg);
+      transform: rotate(360deg);
+      transform: rotate(360deg);
       opacity: 0;
     }
   
 }
 
 
-@-webkit-keyframes spin {
-  0% { -webkit-transform: rotate(0deg); }
-  100% { -webkit-transform: rotate(360deg); }
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
 }
 
 @keyframes spin {
@@ -277,7 +275,6 @@ footer {
   color: whitesmoke;
   z-index: 2;
   display: flex;
-  justify-content: column;
   
 }
 footer h1 {
@@ -467,9 +464,9 @@ header {
 }
 .restaurant__card .card__description i:hover {
   font-weight: 900;
-  background: -webkit-linear-gradient(#FF79DA, #9356DC);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  background: linear-gradient(#FF79DA, #9356DC);
+  background-clip: content-box;
+  text-decoration-color: transparent;
   animation: fondu-in 0.5s ease-in-out;
   animation-delay: 0.1s;
   transition: 0.5s ease-in-out;
@@ -497,8 +494,8 @@ header {
 .menu button :hover {
   font-weight: 900;
   background: -webkit-linear-gradient(#FF79DA, #9356DC);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-decoration: transparent;
   animation: fondu-in 0.5s ease-in-out;
   animation-delay: 0.1s;
   transition: 0.5s ease-in-out;
@@ -514,9 +511,9 @@ header {
 }
 .menu__title i:hover {
   font-weight: 900;
-  background: -webkit-linear-gradient(#FF79DA, #9356DC);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  background: linear-gradient(#FF79DA, #9356DC);
+  background-clip: content-box;
+  text-decoration-color: transparent;
   animation: fondu-in 0.5s ease-in-out;
   animation-delay: 0.1s;
   transition: 0.5s ease-in-out;
@@ -698,15 +695,7 @@ header {
   }
 }
 @media (min-width: 992px) {
-  .container__index {
-   /* flex-direction: row;*/
-  }
-  .container__index--1 {
-    /*
-    flex: 1;
-    */
-  }
-
+ 
   .find__what {
     padding: 40px 15px 40px 15px;
   }
@@ -758,14 +747,6 @@ input:focus {
   outline: none;
 }
 
- /* mobiles: comme c'est un projet en mobile first, le loader est, je pense présent sur la version mobile */
-@media all and (max-device-width: 480px)
-{/*
-   .loader{
-     display: none;
-   }*/
-
-
    .footer
    {
        display: flex;
@@ -796,4 +777,4 @@ input:focus {
        padding-left: 30px;
    }
 
-  }
+  
