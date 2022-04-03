@@ -125,11 +125,6 @@ ul, nav {
 
 .loader { 
   opacity: 0.8;
-  border: 16px solid #FF79DA;
-  border-radius: 50%;
-  border-top: 16px solid #9356DC;
-  border-right: 16px solid #FF79DA;
-  border-bottom: 16px solid #99E2D0;
   z-index: 10;
   position: fixed;
   top: 0;
@@ -270,24 +265,73 @@ ul, nav {
  
 
 footer {
+  
   padding: 20px;
   background-color: #2e2e2e;
   color: whitesmoke;
   z-index: 2;
   display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: space-evenly;
+  align-items: center;
   
 }
-footer h1 {
+
+footer h3 {
   font-family: "Shrikhand", cursive;
-  font-size: 20px;
+  font-size: 33px;
   font-weight: lighter;
+  
 }
-footer li {
-  margin: 15px 0 15px 0;
+
+.styled {
+  border: 0;
+  line-height: 2.5;
+  padding: 0 20px;
+  font-size: 1rem;
+  text-align: center;
+  color: white;
+  text-shadow: 1px 1px 1px #000;
+  border-radius: 10px;
+  background-color: rgba(46,46,46);
+  background-image: linear-gradient(to top left,
+                                    rgba(0, 0, 0, .2),
+                                    rgba(0, 0, 0, .2) 30%,
+                                    rgba(0, 0, 0, 0));
+  
 }
-footer li i {
-  margin-right: 15px;
-} 
+
+.styled:hover {
+border: 0;
+  line-height: 2.5;
+  padding: 0 20px;
+  font-size: 1rem;
+  text-align: center;
+  color: #99E2D0;
+  text-shadow: 1px 1px 1px #000;
+  border-radius: 10px;
+  background-image: linear-gradient(to top left,
+                                    rgba(0, 0, 0, .2),
+                                    rgba(0, 0, 0, .2) 30%,
+                                    rgba(0, 0, 0, 0));
+  box-shadow: inset 2px 2px 3px rgba(255, 255, 255, .6),
+              inset -2px -2px 3px rgba(0, 0, 0, .6);
+  background-color: rgba(255,121,218);
+}
+
+.styled:active {
+  box-shadow: inset -2px -2px 3px rgba(255, 255, 255, .6),
+              inset 2px 2px 3px rgba(0, 0, 0, .6);
+}
+
+ 
+.body .footer .container__infos a h4 {
+width: fit-content;
+padding: 5px 0px;
+color: #fff;
+}
 
 header {
   font-family: "Shrikhand", cursive;
@@ -472,6 +516,12 @@ header {
   transition: 0.5s ease-in-out;
 }
 
+.fa-heart {
+  color: white;
+  width: 3px;
+  color: black;
+  cursor: pointer;
+}
 .bgimg {
   height: 300px;
 }
@@ -649,6 +699,7 @@ header {
   width: 35%;
   min-width: 250px;
 }
+
 
 @media screen and (min-width: 768px) {
   
