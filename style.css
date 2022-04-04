@@ -587,11 +587,12 @@ color: #cb6eed;
   font-family: "Shrikhand", cursive;
   display: flex;
   justify-content: space-between;
-  f
+  
 }
 .menu__title i {
   font-size: 30px;
   cursor: pointer;
+  margin: 10px;
 }
 .menu__title i:hover {
   font-weight: 900;
@@ -653,6 +654,7 @@ color: #cb6eed;
   border-radius: 0 15px 15px 0;
 }
 .menu ul li i {
+  margin-right: 12px;
   display: flex;
   justify-content: center;
   align-items: center;
